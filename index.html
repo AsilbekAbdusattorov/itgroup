@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор QR-кодов и оплата</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h2>Генератор QR-кодов</h2>
+    <div id="qr-code"></div>
+
+    <h2>Заказ печати</h2>
+    <form>
+        <label for="file-upload">Выберите файл:</label>
+        <input type="file" id="file-upload"><br><br>
+
+        <label for="paper-size">Размер бумаги:</label>
+        <select id="paper-size">
+            <option value="A4">A4</option>
+            <option value="A3">A3</option>
+        </select><br><br>
+
+        <label for="color">Цветность:</label>
+        <select id="color">
+            <option value="bw">Черно-белая</option>
+            <option value="color">Цветная</option>
+        </select><br><br>
+
+        <button id="calculate-button">Рассчитать цену</button>
+    </form>
+
+    <div id="price-section" style="display: none;">
+        <h3>Цена: <span id="price"></span></h3>
+        <button id="pay-button">Оплатить</button>
+    </div>
+
+    <div id="confirmation" style="display: none;">
+        <h3>Спасибо за заказ! Он будет обработан в ближайшее время.</h3>
+    </div>
+</body>
+</html>

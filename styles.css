@@ -1,0 +1,112 @@
+/* Umumiy sahifa uslubi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sarlavhalar */
+h2 {
+    color: #007bff;
+}
+
+/* QR kod konteyneri */
+#qr-code {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #007bff;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Forma va butonlar */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Hisoblash va to'lov bo'limlari */
+#price-section, #confirmation {
+    background-color: #dff0d8;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+#price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Tugmalar */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobil ekranlar uchun moslashuv */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    #qr-code {
+        width: 120px;
+        height: 120px;
+    }
+}
